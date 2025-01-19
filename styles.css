@@ -1,0 +1,367 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Header Section with Background Image */
+  header {
+    background-image: url('./background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px; /* Adjust padding as needed to accommodate the background image */
+    text-align: center;
+  }
+  
+  header .logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: darkslategray;
+  }
+  
+  header p {
+    font-size: 2rem;
+    color: rgb(41, 33, 49);
+  }
+  
+  nav button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #16a085;
+  }
+  
+  /* Hidden Elements */
+  .hidden {
+    display: none;
+  }
+  /* Contact Section */
+#contactSection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  /* contact section */
+  
+  #contactSection h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  #contactSection p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  #contactSection p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #contactSection p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Search Section */
+  #searchSection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #searchSection input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #searchSection input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  #blogSuggestions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #blogSuggestions ul li {
+    background-color: #f1f1f1;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #blogSuggestions ul li:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  #aboutSection {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  #aboutSection h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  #aboutSection p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  
+  
+  /* Blog Section */
+  #blogPosts {
+    margin: 20px;
+  }
+  
+  .blog {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blogImage {
+    width:200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+  .blogSnippet {
+    margin-top: 15px;
+  }
+  
+  .blogFullContent {
+    margin-top: 20px;
+  }
+  
+  #filterSection button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #58cbb2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    
+
+  }
+  
+  #filterSection button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Note Taking Section */
+  #noteSection {
+    margin: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Text Editor Section */
+  #textEditorSection {
+    margin: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: rgb(64, 50, 78);
+  }
+  
+  .editor {
+    border: 1px solid #427c9f;
+    width: 100%;
+    min-height: 300px;
+    padding: 10px;
+  }
+  
+  /* Review Section */
+  #reviews {
+    margin: 30px;
+  }
+  
+  #reviews p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .socialMediaLinks a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .socialMediaLinks a:hover {
+    text-decoration: underline;
+  }
+  /* Responsive styles */
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    header .logo {
+      margin-bottom: 15px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #blogPosts {
+      padding: 10px;
+    }
+  
+    .blog {
+      margin-bottom: 15px;
+    }
+  
+    .blogSnippet {
+      font-size: 14px;
+    }
+  
+    .blog h3 {
+      font-size: 18px;
+    }
+  
+    footer .socialMediaLinks {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      flex-direction: row;
+    }
+  
+    header .logo {
+      margin-bottom: 0;
+    }
+  
+    #blogPosts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+  
+    .blogImage {
+      width: 100%;
+      height: auto;
+    }
+  
+    .blogSnippet {
+      font-size: 15px;
+    }
+  
+    footer .socialMediaLinks {
+      gap: 10px;
+    }
+  }
+  
+  /* Laptop styles */
+  @media (min-width: 1024px) {
+    header {
+      flex-direction: row;
+    }
+  
+    #blogPosts {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+    }
+  
+    .blog h3 {
+      font-size: 22px;
+    }
+  
+    .blogSnippet {
+      font-size: 16px;
+    }
+  
+    footer .socialMediaLinks {
+      gap: 15px;
+    }
+  }
+  
+  /* Additional adjustments */
+  #filterSection {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #filterSection button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #filterSection button:hover {
+    background-color: #45a049;
+  }
+  
+  
+  
