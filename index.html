@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnerGlow Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="./icon.jpg" alt="Logo" width="50">
+      <h1>THE CALM CORNER</h1>
+      <p>A safe space to find peace, balance, and healing for your mind.</p>
+    </div>
+    <nav>
+      <button id="contactBtn">Contact Us</button>
+      <button id="searchBtn">Search</button>
+      <button id="aboutBtn">About Us</button>
+    </nav>
+  </header>
+
+  <!-- Sections -->
+  <div id="contactSection" class="hidden">
+    <h2>Contact Us</h2>
+    <p>We’d Love to Hear From You!
+        At My Blog Platform, your thoughts, feedback, and ideas matter to us. Whether you’re a blogger looking for support, a reader with questions, or someone who simply wants to connect, we’re here to help! Feel free to reach out, and let’s make this platform better together.
+        
+        </p>
+        <p>📧 Email Us <br>
+
+
+            Our support team is ready to assist you with any queries or technical issues. Drop us an email at support@myblogplatform.com, and we’ll get back to you within 24-48 hours.
+            
+            </p>
+            <p>📞 Call Us<br>
+
+                Prefer speaking directly? Call us at +1 123-456-7890 (Monday to Friday, 9 AM - 6 PM EST).
+                </p>
+                <p>🏢 Visit Us<br>
+
+                    Stop by our office for a coffee and a chat:
+                    123 Blogging Lane, Writer's City, Creativity State, 12345
+                    
+                    </p>
+  </div>
+
+  <div id="searchSection" class="hidden">
+    <input type="text" id="searchInput" placeholder="Search Blogs">
+    <div id="blogSuggestions">
+      <ul>
+        <li>Mindfulness Practices</li>
+        <li>Overcoming Stress</li>
+        <li>Therapy Insights</li>
+        <li>Self-Care Tips</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="aboutSection" class="hidden">
+    <h2>About Us</h2>
+    <p>At The Calm Corner, our mission is simple: to create a safe space where you can find peace, balance, and healing for your mind. In a world that constantly demands more from us, we understand how important it is to pause, reflect, and take care of your mental well-being. That’s why we’re here — to guide you on your journey toward mental clarity, emotional resilience, and a peaceful mindset..</p>
+  <p>We provide a variety of resources aimed at helping individuals manage stress, understand their emotions, and adopt healthy mental habits. Our content is curated with care, blending expert insights, practical advice, and personal stories that are designed to support and inspire you.</p>
+<p>Whether you’re struggling with stress, looking for mindfulness techniques, or seeking tips on emotional regulation, we offer the tools you need to navigate life’s ups and downs. Our blog features articles on topics like mindfulness, emotional intelligence, stress management, and the power of positive thinking.</p>
+
+</div>
+
+  <!-- Blog Filtering Section -->
+  <div id="filterSection">
+    <button onclick="filterBlogs('mind')">Mind</button>
+    <button onclick="filterBlogs('emotions')">Emotions</button>
+    <button onclick="filterBlogs('powerofmind')">Power of Mind</button>
+  </div>
+
+  <!-- Main Content: Pre-Written Blogs -->
+  <div id="blogPosts">
+    <div class="blog" data-category="mind">
+      <img src="./mh1.jpg" alt="Mental Health Blog 1" class="blogImage">
+      <h3> Power of the Mind</h3>
+      <p class="blogSnippet">The Mind's Influence on Emotional Well-being</p>
+      <div class="blogFullContent hidden">
+        <p>The mind plays a crucial role in shaping our emotional health, as our thoughts and perceptions significantly influence how we feel and respond to different situations. When the mind is clouded by negative or irrational thinking, it can lead to emotional distress such as anxiety, depression, or anger. For example, catastrophic thinking, where one believes that the worst possible outcome will always occur, can fuel feelings of helplessness and fear. On the other hand, cultivating a positive and balanced mindset can have a profound impact on emotional well-being. Practices like cognitive reframing, where negative thoughts are challenged and replaced with more constructive ones, can help individuals regain control of their emotions and develop resilience. A healthy mind allows individuals to cope more effectively with life’s challenges, fostering a sense of emotional stability and inner peace. The ability to manage negative thoughts and focus on positive solutions is a powerful tool in maintaining good mental health.</p>
+      </div>
+    </div>
+
+    <div class="blog" data-category="mind">
+        <img src="./mh1.1.jpg" alt="Mental Health Blog 1" class="blogImage">
+        <h3> Power of the Mind</h3>
+        <p class="blogSnippet">The Link Between Mental Clarity and Stress Management</p>
+        <div class="blogFullContent hidden">
+          <p>Mental clarity is essential in managing stress effectively. When the mind is overwhelmed with cluttered thoughts, worries, or unresolved emotions, it can become difficult to think clearly and make sound decisions. This lack of mental clarity often leads to heightened stress and poor coping mechanisms. On the contrary, when the mind is calm and focused, individuals can approach stressors with greater perspective and control. Techniques such as mindfulness, meditation, and journaling help to clear the mental fog, enabling individuals to process their emotions more effectively and reduce anxiety. By practicing mental clarity, individuals can avoid the spiral of overthinking and maintain a more balanced outlook on life. The power of a focused mind lies in its ability to break the cycle of stress, creating a sense of mental equilibrium that contributes to overall well-being. Managing mental clarity is key to preventing burnout, improving decision-making, and enhancing emotional resilience.</p>
+        </div>
+      </div>
+        <div class="blog" data-category="mind">
+            <img src="./mh1.2.png" alt="Mental Health Blog 1" class="blogImage">
+            <h3> Power of the Mind</h3>
+            <p class="blogSnippet">How the Mind Shapes Our Response to Adversity.</p>
+            <div class="blogFullContent hidden">
+              <p>The way the mind perceives and reacts to adversity can greatly affect mental health outcomes. When faced with challenges, our mental framework determines whether we view the situation as a threat or an opportunity for growth. A mindset that fosters self-compassion, problem-solving, and optimism can help individuals navigate difficult circumstances with greater ease. On the other hand, a negative mindset may lead to feelings of hopelessness and self-doubt. This is particularly true in the case of traumatic experiences or chronic stress. Individuals with a more resilient mindset tend to recover from setbacks faster and with fewer lasting effects on their mental health. Cognitive Behavioral Therapy (CBT) and other therapeutic techniques can help individuals reframe their thinking, allowing them to view challenges from a different perspective and build greater emotional resilience. The mind’s ability to reshape how we respond to adversity directly influences our mental health, and cultivating a positive mindset can be a powerful tool for navigating life’s ups and downs..</p>
+            </div>
+        </div>
+    
+    <div class="blog" data-category="emotions">
+      <img src="./mh2.webp" alt="Mental Health Blog 2" class="blogImage">
+      <h3> Understanding Emotions</h3>
+      <p class="blogSnippet">Understanding the Connection Between Emotions and Mental Health</p>
+      <div class="blogFullContent hidden">
+        <p>Emotions play a significant role in shaping our mental health, influencing how we perceive and respond to the world around us. 
+            The way we manage emotions such as anger, sadness, or anxiety can directly affect our emotional well-being.
+             When emotions are well-regulated, individuals tend to feel balanced and at peace.
+              However, when emotions are overwhelming or suppressed, they can lead to increased stress, anxiety, and even depression.
+               Chronic emotional distress can cause a negative feedback loop, where unresolved feelings accumulate and exacerbate mental health challenges.
+                For instance, long-term anger or frustration can lead to irritability and exhaustion, while unresolved sadness might manifest as depression.
+                 Recognizing and addressing emotions early on can prevent them from negatively impacting mental health, promoting emotional resilience and psychological well-being.</p>
+      </div>
+    </div>
+      <div class="blog" data-category="emotions">
+        <img src="./mh2.1.webp" alt="Mental Health Blog 2" class="blogImage">
+        <h3> Understanding Emotions</h3>
+        <p class="blogSnippet">How Emotional Awareness Supports Mental Health Recovery.</p>
+        <div class="blogFullContent hidden">
+          <p>Emotions play a significant role in shaping our mental health, influencing how we perceive and respond to the world around us.
+             The way we manage emotions such as anger, sadness, or anxiety can directly affect our emotional well-being.
+              When emotions are well-regulated, individuals tend to feel balanced and at peace.
+               However, when emotions are overwhelming or suppressed, they can lead to increased stress, anxiety, and even depression.
+                Chronic emotional distress can cause a negative feedback loop, where unresolved feelings accumulate and exacerbate mental health challenges.
+                 For instance, long-term anger or frustration can lead to irritability and exhaustion, while unresolved sadness might manifest as depression. 
+                 Recognizing and addressing emotions early on can prevent them from negatively impacting mental health, promoting emotional resilience and psychological well-being.</p>
+        </div>
+      </div>
+        <div class="blog" data-category="emotions">
+            <img src="./mh2.2.jpg" alt="Mental Health Blog 2" class="blogImage">
+            <h3> Understanding Emotions</h3>
+            <p class="blogSnippet">The Power of Emotions in Mental Health Disorders</p>
+            <div class="blogFullContent hidden">
+              <p>Our emotional responses can significantly influence the development and progression of mental health disorders.
+                 Anxiety and depression, two common mental health conditions, are often triggered or exacerbated by intense, unmanaged emotions. 
+                 Anxiety, for example, is often rooted in a heightened emotional response to stress or fear, which can escalate if not addressed.
+                  Similarly, depression can arise when individuals experience persistent feelings of sadness, hopelessness, or guilt, which ultimately weigh heavily on their mental well-being. 
+                  These emotions not only affect how one thinks but also how they function in their daily lives. Social withdrawal, lack of motivation, 
+                  and difficulty concentrating are some of the mental and physical symptoms that can result from emotional distress. Seeking therapy, practicing mindfulness, or learning emotional regulation techniques can help individuals address these emotions and mitigate their negative effects on mental health.</p>
+            </div>
+    </div>
+    <div class="blog" data-category="powerofmind">
+        <img src="./mh3.jpg" alt="Mental Health Blog 2" class="blogImage">
+        <h3> Understanding Emotions</h3>
+        <p class="blogSnippet">The Power of Positive Thinking in Mental Health</p>
+        <div class="blogFullContent hidden">
+          <p>The mind is a powerful tool, capable of shaping our reality through thoughts, beliefs, and perceptions. Positive thinking is often cited as a key factor in improving mental health. When we focus on the positive aspects of life, we can shift our mindset from one of negativity to one of hope and possibility. This shift can reduce feelings of anxiety, depression, and stress. The mind has the ability to influence the body's stress response, meaning that positive thoughts can lower levels of cortisol, the stress hormone, while promoting the production of endorphins, which are known as "feel-good" chemicals. By practicing gratitude, affirmations, and optimism, individuals can reframe negative thoughts and strengthen their resilience against mental health challenges. The power of positive thinking encourages individuals to overcome adversity and maintain a sense of well-being, even in difficult circumstances.</p>
+        </div>
+</div>
+<div class="blog" data-category="powerofmind">
+    <img src="./mh3.1.jpg" alt="Mental Health Blog 2" class="blogImage">
+    <h3> Understanding Emotions</h3>
+    <p class="blogSnippet">  Mindfulness and Its Role in Managing Mental Health</p>
+    <div class="blogFullContent hidden">
+      <p>The practice of mindfulness, or staying fully present in the moment, is a powerful way to enhance mental health. When individuals learn to focus on their thoughts and feelings without judgment, they can better understand and manage their emotional responses. The power of the mind is evident in mindfulness practices, as it trains the brain to disengage from stress-inducing thoughts and remain grounded. Research has shown that mindfulness can reduce symptoms of anxiety, depression, and chronic stress by helping individuals break the cycle of negative thinking. Mindfulness-based techniques, such as deep breathing, meditation, and body scanning, allow the mind to reset and focus on the present rather than dwelling on the past or future. This mental clarity reduces emotional reactivity and fosters a sense of inner peace, helping individuals to maintain better control over their mental health.</p>
+    </div>
+</div>
+<div class="blog" data-category="powerofmind">
+    <img src="./mh3.2.jpg" alt="Mental Health Blog 2" class="blogImage">
+    <h3> Understanding Emotions</h3>
+    <p class="blogSnippet">Cognitive Behavioral Therapy (CBT) and the Mind’s Impact on Mental Health.</p>
+    <div class="blogFullContent hidden">
+      <p>Cognitive Behavioral Therapy (CBT) is a therapeutic approach that leverages the power of the mind to help individuals overcome mental health challenges. By identifying and challenging distorted thought patterns, CBT empowers individuals to change their negative thinking, which can significantly improve mental health. The mind has the ability to shape how we perceive ourselves and the world around us, and with CBT, individuals can learn to replace self-defeating thoughts with healthier, more balanced perspectives. For example, someone with anxiety may learn to recognize irrational fears and reframe them, reducing their anxiety. Similarly, individuals struggling with depression can shift negative self-talk to more compassionate and realistic beliefs, leading to improved emotional well-being. CBT demonstrates how the mind, when trained and guided in the right direction, has the power to transform mental health by fostering positive thought patterns and behaviors.
+
+      </p>
+    </div>
+</div>
+    <!-- More blogs here... -->
+  </div>
+
+  <!-- Note-Taking Section -->
+  <div id="noteSection">
+    <h2>Note Taking</h2>
+    <textarea id="noteInput" placeholder="Write your thoughts or ideas here..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+  </div>
+
+  <!-- Text Editor Section -->
+  <div id="textEditorSection">
+    <h2>Blog Text Editor</h2>
+    <div contenteditable="true" id="textEditor" class="editor"></div>
+    <div>
+      <button onclick="formatText('bold')">Bold</button>
+      <button onclick="formatText('italic')">Italic</button>
+      <button onclick="formatText('underline')">Underline</button>
+      <button onclick="formatText('insertOrderedList')">Bullet Points</button>
+      <button onclick="insertHeading()">
+        <select id="heading-select" onchange="applyHeading(this.value)">
+            <option value="">Heading</option>
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+          </select></button>
+    </div>
+  </div>
+
+  <!-- Review Section -->
+  <div id="reviews">
+    <h1>People's Reviews</h1>
+    <p>"THE CALM CORNER has been a game-changer for my mental well-being. As someone who often struggles with anxiety, I found the articles on mindfulness and emotional regulation to be incredibly helpful. The tips and strategies shared on the site have given me practical tools to manage my stress and stay grounded in the present moment. I especially appreciate the blog’s approach to breaking down complex mental health topics into easy-to-understand content. The site is well-organized, and I love the variety of content available—from personal stories to expert advice. It's a place I can always come back to when I need reassurance or guidance. Highly recommend it to anyone looking to take better care of their mental health!"
+        — Sarah W.</p>
+        <br>
+        <br>
+    <p>"I've been following THE CALM CORNER for a few months now, and I have to say, it’s been incredibly helpful in my journey toward better mental health. The articles not only provide great insights into understanding the mind and emotions but also offer actionable advice. I particularly enjoyed the blog on overcoming negative thinking patterns. The resources provided have empowered me to make real changes in how I approach challenges. The website is easy to navigate, and the content is engaging and supportive. It feels like a safe space to learn and grow, and I'm grateful to have found this blog!"
+        — John T.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 THE CALM CORNER. All rights reserved.</p>
+    <div class="socialMediaLinks">
+      <a href="https://facebook.com/innerglow" target="_blank">Facebook</a>
+      <a href="https://twitter.com/innerglow" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
